@@ -18,15 +18,21 @@ import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
     private WebView myWebView;
 
+
     public void showExternalWebPage(){
-       myWebView = new WebView(this);
+         myWebView = new WebView(this);
+        WebSettings webSettings = myWebView.getSettings();
         setContentView(myWebView);
+        webSettings.setJavaScriptEnabled(true);
         myWebView.loadUrl("https://www.kaval.se");
+
     }
 
     public void showInternalWebPage(){
         myWebView = new WebView(this);
+        WebSettings webSettings = myWebView.getSettings();
         setContentView(myWebView);
+        webSettings.setJavaScriptEnabled(true);
       myWebView.loadUrl("file:///android_asset/html/index.html\n");
     }
 
@@ -36,13 +42,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-        myWebView = (WebView) findViewById(R.id.my_webView);
         WebViewClient  myWebViewClient = new WebViewClient();
 
-        WebSettings webSettings = myWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+
+
+
 
         /*
         * Rename your App. Tip: Values->Strings
