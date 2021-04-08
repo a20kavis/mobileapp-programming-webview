@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WebViewApp</string>
-    <string name="action_external_web">External Web Page</string>
-    <string name="action_internal_web">Internal Web Page</string>
+    <string name="app_name">Kavals WebviewApp</string>
+    <string name="action_external_web">Open website</string>
+    <string name="action_internal_web">Open local file</string>
 </resources>
