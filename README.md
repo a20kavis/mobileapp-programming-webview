@@ -32,7 +32,7 @@ function errorCallback(error) {
 ```
 
 Bilder läggs i samma mapp som markdown-filen.
-
+https://www.kaval.se/i/c2sz3.png
 ![](android.png)
 
 Läs gärna:
